@@ -23,6 +23,23 @@
   --fundo-card: #ffffff;
 }
 
+body.escuro {
+  --fundo-principal: #222222;
+  --texto: #e0e0e0;
+  --texto-inverso: #333333;
+  --destaque: #ff5522;
+  --destaque-inverso: #a73917;
+  --fundo-card: #444444;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 1.5em;
+  background-color: var(--fundo-principal);
+  color: var(--texto);
+  transition: background-color 0.5s, color 0.5s;
+}
+
 header {
   background-color: var(--destaque);
   color: var(--texto);
@@ -53,13 +70,6 @@ nav#menu a {
 nav#menu a:hover{
   background-color: var(--destaque-inverso);
   color: var(--destaque);
-}
-
-body {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  line-height: 1.5em;
-  background-color: var(--fundo-principal);
-  color: var(--texto);
 }
 
 main {
